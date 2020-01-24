@@ -86,9 +86,9 @@ public class Array {
         System.out.println("Minimum value from array: "+min);
 
         stringArrayHandling();
-        String s;
-        s = new String();
-        revString(s);
+
+        String name[] = new String[]{"Nikita","Karan"};
+        revString(name);
     }
     public static void stringArrayHandling() {
         String str[];
@@ -112,14 +112,12 @@ public class Array {
         }
     }
 
-    public static String revString(String str)
+    public static String revString(String s[])
     {
-        char c [] = str.toCharArray();
-        String rev="";
-        for (int i = c.length-1; i>=0; i--)
+
+        for (int i =s.length-1; i>=0; i--)
         {
-            rev= rev+c[i];
+            System.out.println(s[i]);
         }
-        return rev;
     }
 }
